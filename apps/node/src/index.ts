@@ -1,4 +1,4 @@
-import type { Activity } from "@acme/types";
+import { Activity } from "@acme/types";
 // import { Client, GatewayIntentBits } from "discord.js";
 
 // const client = new Client({

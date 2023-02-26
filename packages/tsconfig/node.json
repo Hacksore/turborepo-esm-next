@@ -13,8 +13,8 @@
     "noEmit": false,
     "incremental": true,
     "esModuleInterop": true,
-    "module": "Node16",
-    "moduleResolution": "nodenext",
+    "module": "ES2020",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true
   },

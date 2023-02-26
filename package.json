@@ -13,6 +13,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@acme/types": "*",
     "eslint-config-custom": "*",
     "prettier": "latest",
     "turbo": "latest"

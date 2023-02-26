@@ -5,12 +5,6 @@
   "types": "./index.ts",
   "type": "module",
   "license": "MIT",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js"
-    }
-  },
   "scripts": {
     "lint": "eslint \"**/*.ts*\""
   },
