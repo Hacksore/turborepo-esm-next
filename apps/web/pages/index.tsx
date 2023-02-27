@@ -1,7 +1,6 @@
-import { Example } from "../components/example.jsx";
+import { Example } from "../components/example";
 
 export default function Web() {
-
   return (
     <div>
       <h1>@acme/web</h1>

@@ -4,15 +4,17 @@
   "private": true,
   "description": "",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "tsx watch src/index.ts ",
     "build": "rimraf dist && tsc",
-    "lint": "eslint 'src/**/*'"
+    "lint": "eslint 'src/**/*'",
+    "typecheck": "tsc --noEmit"
   },
   "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "tsx": "^3.12.3",
     "@acme/types": "*",
     "@types/node": "^18.11.7",
     "dotenv": "^16.0.3",
