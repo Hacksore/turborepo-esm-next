@@ -6,7 +6,7 @@ RUN apk update
 WORKDIR /app
 RUN yarn global add turbo
 COPY . .
-RUN turbo prune --scope=bot --docker
+RUN turbo prune --scope=node --docker
 
 # Add lockfile and package.json's of isolated subworkspace
 FROM node:16-alpine AS installer
@@ -23,7 +23,7 @@ RUN yarn install
 # Build the project and its dependencies
 COPY --from=builder /app/out/full/ .
 COPY turbo.json turbo.json
-RUN yarn turbo run build --filter=bot...
+RUN yarn turbo run build --filter=node
 
 FROM node:16-alpine AS runner
 WORKDIR /app
@@ -35,4 +35,4 @@ USER expressjs
 COPY --from=installer /app .
 
 # run node
-CMD node apps/bot/dist/index.js
+CMD node apps/node/dist/index.js

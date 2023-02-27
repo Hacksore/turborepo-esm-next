@@ -13,7 +13,7 @@
     "baseUrl": ".",
     "typeRoots": ["./node_modules/@types", "./types"],
     "paths": {
-      "@acme/types": ["packages/types/src"],
+      "@acme/types/src/*": ["./packages/types/src/*"],
     },
     "types": ["node"]
   }

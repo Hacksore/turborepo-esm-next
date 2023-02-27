@@ -1,14 +1,11 @@
-import { Activity } from "@acme/types";
+import { Example } from "../components/example.jsx";
 
 export default function Web() {
-  const act: Activity = {
-    name: "ligma"
-  };
 
   return (
     <div>
-      <h1>Web</h1>
-      <pre>{JSON.stringify(act, null, 2)}</pre>
+      <h1>@acme/web</h1>
+      <Example />
     </div>
   );
 }

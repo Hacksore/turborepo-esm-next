@@ -5,7 +5,7 @@
   "description": "",
   "scripts": {
     "start": "nodemon src/index.ts",
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
     "lint": "eslint 'src/**/*'"
   },
   "type": "module",
@@ -18,12 +18,9 @@
     "dotenv": "^16.0.3",
     "eslint-config-custom": "*",
     "nodemon": "^2.0.20",
+    "rimraf": "^4.1.2",
     "ts-node": "^10.9.1",
     "tsconfig": "*",
     "typescript": "^4.8.4"
-  },
-  "dependencies": {
-    "discord.js": "^14.7.1",
-    "firebase-admin": "^11.2.0"
   }
 }
